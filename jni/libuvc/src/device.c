@@ -1102,8 +1102,8 @@ uvc_error_t uvc_parse_vc(uvc_device_t *dev, uvc_device_info_t *info,
 		UVC_EXIT(UVC_SUCCESS);
 		return UVC_SUCCESS; // UVC_ERROR_INVALID_DEVICE;
 	}
-
 	descriptor_subtype = block[2];
+	LOGI("descriptor_subtype %d ",descriptor_subtype);
 
 	switch (descriptor_subtype) {
 	case UVC_VC_HEADER:
